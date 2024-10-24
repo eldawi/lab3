@@ -1,0 +1,13 @@
+name: Python CI/CD
+on: [Push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+      - uses: actions/chechkout@v3
+      - name: Set up python
+      - uses: actions/setup-python@v3
+        with:
+          python-version: 3w
